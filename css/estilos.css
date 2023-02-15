@@ -1,0 +1,84 @@
+:root{
+    --fondoClaro:#18232C;
+    -fondoOscuro:#141E26;
+    --fondoInputText:#11191F;
+    --colorPlaceholder:#58656E;
+    --coloBoton:#1095C1;
+    --botonHover:#19B3E6;
+    --borderInput:#1095C1;
+    --textcolor:#B1BBC4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto;
+    background-color: var(--fondoInputText);
+    background: linear-gradient(to right, hsla(244, 79%, 19%, 0.632), hsla(247, 86%, 25%, 0.664)), url(../img/fondo.png);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+}
+
+form p{
+    text-align: center;
+    font-size: 50px;
+    margin: 20px;
+}
+
+input:focus{
+    outline: none;
+}
+
+input [type = "text"]{
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: var(--fondoInputText);
+}
+
+.contenedor{
+    width: 350px;
+    margin: 20px 80px auto;
+    background-color: var(--fondoClaro);
+    color: aliceblue;
+    border: none;
+    padding: 20px 5px;
+    border: none; 
+    border-radius: 10px;
+}
+
+.btn{
+    background-color: var(--coloBoton);
+    width: 100px;
+    height: 30px;
+    color: aliceblue;
+    border: none;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: var(--botonHover);
+    width: 100px;
+    height: 30px;
+}
+
+.textbox{
+    width: 100%;
+    height: 30px;
+    background-color: var(--fondoInputText);
+    color: var(--textcolor);
+    font-size: 20px;
+    border:1px solid rgb(52, 52, 90);
+    text-align: center;
+    border-radius: 5px;
+}
+.textbox:focus{
+    box-shadow: 0 0 5px var(--botonHover);
+    border: 1px solid var(--borderInput);
+}

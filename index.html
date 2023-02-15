@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dev Fuse">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Calculadora  </title>
+</head>
+<body>
+
+    <div class="contenedor">
+        <form action="" id="calculadora">
+            <div class="hola">
+                <label for="">Numero 1</label>
+                <input type="text" class="textbox"  id="numero1" placeholder="Ingresa un numero">
+                <br>
+                <p id="operacion"></p>
+                <br>
+                <label for="">Numero 2</label>
+                <input type="text" class="textbox"   id="numero2" placeholder="Ingresa un numero">
+                <br>
+                <br>
+                <input type="button" class="btn" value="SUMAR" onclick="suma()">
+                <input type="button" class="btn" value="RESTAR" onclick="resta()">
+                <input type="button" class="btn" value="MULTIPLICAR" onclick="multiplicar()">
+                <input type="button" class="btn" value="DIVIDIR" onclick="dividir()">
+                <input type="button" class="btn" value="LIMPIAR" onclick="limpiar()">
+                <br>
+                <p id="igual">=</p>
+                <input type="text" class="textbox"  id="resultado" readonly>
+                </div>
+        </form>
+    </div>
+
+</body>
+<script src="js/index.js"></script>
+</html>
